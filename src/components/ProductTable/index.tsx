@@ -39,6 +39,8 @@ export function ProductTable({ categoryItems }: ListProductItemsProps) {
       <Table className={styles.tableContainer} responsive="sm">
         <ProductTableHeader />
         <AddProductInTable categoryItems={categoryItems} />
+        <AddProductInTable categoryItems={categoryItems} />
+        <AddProductInTable categoryItems={categoryItems} />
       </Table>
     </div>
   );
