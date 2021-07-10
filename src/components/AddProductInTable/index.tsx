@@ -75,7 +75,7 @@ export function AddProductInTable({ categoryItems }: any) {
                 type="text"
                 onChange={(e) => setUserInputInstructions(e.target.value)}
                 value={userInputInstructions}
-                placeholder="Adicionar Item"
+                placeholder="Observações"
               />
               <BiPencil />
             </div>
