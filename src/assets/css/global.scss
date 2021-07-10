@@ -1,0 +1,84 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-green: #00733f;
+  --color-red: #db4139;
+
+  --color-brown-100: #f1ddc8;
+  --color-brown-500: #9f8167;
+  --color-brown-900: #54412f;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-black);
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 29px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+button {
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  line-height: 18px;
+  transition: filter 0.3s;
+  &:hover {
+    filter: brightness(0.9);
+  }
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+// bootstrap
+.navbar-toggler {
+  background: transparent;
+  border-radius: 100px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @media (max-width: 576px) {
+    padding: 6px;
+  }
+  .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.table td,
+.table th {
+  padding: 10px !important;
+  white-space: pre;
+  vertical-align: center !important;
+  @media (max-width: 576px) {
+    padding: 10px !important;
+  }
+}

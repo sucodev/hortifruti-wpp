@@ -1,0 +1,23 @@
+.tableContainer {
+  width: 100%;
+  margin-top: 20px;
+
+  th {
+    color: #111111;
+    font-family: "Abel", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    background: #eeeeee;
+    border: 1px solid #aaaaaa !important;
+    padding: 10px !important;
+    @media (max-width: 576px) {
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
