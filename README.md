@@ -1,4 +1,4 @@
-Protótipo funcional do WPP do HNT. Desenvolvido com ReactJS, Typescript, Axios, MirageJS, React Bootstrap e SCSS.
+Protótipo funcional do WPP da HNT. Desenvolvido com ReactJS, Typescript, Axios, MirageJS, React Bootstrap e SCSS.
 https://hortifruti-wpp.vercel.app/
 
 ## Mirage JS como "back-end"
