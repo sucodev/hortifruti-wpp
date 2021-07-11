@@ -6,7 +6,6 @@ import { AddProductInTable } from "../AddProductInTable";
 
 import { ListProductItemsProps } from "../../Models/CartContextProps";
 import { useState } from "react";
-import { JsxElement } from "typescript";
 
 function ProductTableHeader() {
   return (
