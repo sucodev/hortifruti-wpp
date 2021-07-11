@@ -9,7 +9,7 @@ export function Header() {
       <Container fluid className={styles.header}>
         <Container>
           <Row>
-            <Col>
+            <Col className={styles.headerLogo} lg={12}>
               <img src={LogoIMG} alt="HortiFruti" />
             </Col>
           </Row>

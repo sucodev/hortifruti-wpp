@@ -12,12 +12,20 @@
     background: #eeeeee;
     border: 1px solid #aaaaaa !important;
     padding: 10px !important;
-    @media (max-width: 576px) {
-    }
+
     div {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+  }
+}
+.addNewRowTable {
+  background: var(--color-brown-900);
+  padding: 10px;
+  font-size: 14px;
+  @media (max-width: 576px) {
+    max-width: 100%;
+    width: 100%;
   }
 }

@@ -16,6 +16,10 @@ export function AddProductInTable({ categoryItems }: any) {
 
   const [search, setSearch] = useState({ text: "", suggestions: [] });
 
+  function onTextChangeQuantity(e: ChangeEvent<HTMLInputElement>) {
+    setUserInputQuantity(e.target.value.replace(/\D+/g, ""));
+  }
+
   function onTextChange(e: ChangeEvent<HTMLInputElement>) {
     const value = e.target.value;
     let suggestions = [];
@@ -47,27 +51,27 @@ export function AddProductInTable({ categoryItems }: any) {
               />
             </div>
           </td>
-          <td className={styles.preco}>
-            <p>
-              {userInputPrice === 0
-                ? "---"
-                : new Intl.NumberFormat("pt-BR", {
-                    style: "currency",
-                    currency: "BRL",
-                  }).format(userInputPrice)}
-              /kg
-            </p>
-          </td>
           <td className={styles.quantidade}>
             <div>
               <Input
                 type="number"
-                onChange={(e) => setUserInputQuantity(e.target.value)}
+                onChange={onTextChangeQuantity}
                 value={userInputQuantity}
                 placeholder="---"
+                pattern="[0-9]*"
               />
               <BiPencil />
             </div>
+          </td>
+          <td className={styles.preco}>
+            <p>
+              {userInputPrice === 0
+                ? "R$ 0,00"
+                : new Intl.NumberFormat("pt-BR", {
+                    style: "currency",
+                    currency: "BRL",
+                  }).format(userInputPrice)}
+            </p>
           </td>
           <td className={styles.instrucoes}>
             <div>

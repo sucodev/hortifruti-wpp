@@ -1,5 +1,8 @@
 .header {
   background: var(--color-brown-900);
+  .headerLogo {
+    padding-left: 0px;
+  }
   @media (max-width: 992px) {
     img {
       margin: 0 auto;
@@ -65,5 +68,9 @@
         }
       }
     }
+  }
+
+  nav {
+    padding-left: 0px;
   }
 }

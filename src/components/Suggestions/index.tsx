@@ -23,7 +23,6 @@ export function Suggestions({ data, setSearch, setUserInputPrice }: any) {
               style: "currency",
               currency: "BRL",
             }).format(suggestion.foodPrice)}
-            /kg
           </td>
           <td></td>
           <td></td>
