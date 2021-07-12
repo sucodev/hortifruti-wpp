@@ -5,15 +5,11 @@ import { Input } from "../Input";
 import styles from "./styles.module.scss";
 
 export function AutoComplete({
-  id,
-  name,
-  type,
   suggestions,
   product,
   setProduct,
   quantity,
   setQuantity,
-  price,
   setPrice,
   select,
   setSelect,

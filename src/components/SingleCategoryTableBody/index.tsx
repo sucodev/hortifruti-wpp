@@ -48,7 +48,6 @@ export function SingleCategoryTableBody({
             setProduct={setProduct}
             quantity={quantity}
             setQuantity={setQuantity}
-            price={price}
             setPrice={setPrice}
             select={productSelected}
             setSelect={setProductSelected}
