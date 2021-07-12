@@ -53,10 +53,13 @@ export function SingleCategoryTableBody({
             setSelect={setProductSelected}
           />
         </td>
+
         <td
+          /* eslint-disable */
           className={`${styles.rowAddQuantity} ${
             product.text !== product.text ? styles.disabled : ""
           }`}
+          /* eslint-disable */
         >
           <Input
             type="number"
