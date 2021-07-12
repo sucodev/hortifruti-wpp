@@ -2,6 +2,11 @@
   width: 100%;
   border: none;
   outline: none;
+
+  &:disabled {
+    background: transparent;
+    cursor: not-allowed;
+  }
   @media (max-width: 576px) {
     width: 130px;
     max-width: 100%;

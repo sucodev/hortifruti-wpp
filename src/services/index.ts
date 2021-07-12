@@ -2,7 +2,7 @@ import { createServer } from "miragejs";
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://hortifruti-wpp.vercel.app/api/",
+  baseURL: "https://localhost:3000/api/",
 });
 
 createServer({

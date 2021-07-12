@@ -1,0 +1,40 @@
+.rowContainer {
+  td {
+    border: 1px solid #aaaaaa;
+    color: #111111;
+    font-family: "Abel", sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    border-top: 1px solid #aaaaaa;
+    &.rowAutoCompleteItem {
+      input {
+        outline: none;
+        width: 100%;
+        padding-left: 15px;
+        border: none;
+        @media (max-width: 576px) {
+          width: 160px;
+        }
+      }
+    }
+    &.rowTotalPrice {
+      background: #eeeeee;
+    }
+
+    &.rowAddInstructions,
+    &.rowAddQuantity {
+      div {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.disabled {
+  background: #eee;
+  cursor: not-allowed;
+}

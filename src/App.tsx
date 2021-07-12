@@ -1,16 +1,22 @@
+// CONTEXTS
+import { CartStorageProvider } from "./contexts/CartContext";
+
+// COMPONENTS
 import { Header } from "./components/Header";
-import { OrdersCheckout } from "./components/OrdersCheckout";
+import { ShowAllCategories } from "./components/ShowAllCategories";
+
+// STYLES
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/global.scss";
 
+// API
 import "./services";
-import { CartStorageProvider } from "./contexts/CartContext";
 
 function App() {
   return (
     <CartStorageProvider>
       <Header />
-      <OrdersCheckout />
+      <ShowAllCategories />
     </CartStorageProvider>
   );
 }

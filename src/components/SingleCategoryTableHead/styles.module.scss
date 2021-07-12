@@ -1,7 +1,4 @@
-.tableContainer {
-  width: 100%;
-  margin-top: 20px;
-
+.theadContainer {
   th {
     color: #111111;
     font-family: "Abel", sans-serif;
@@ -18,14 +15,5 @@
       align-items: center;
       justify-content: space-between;
     }
-  }
-}
-.addNewRowTable {
-  background: var(--color-brown-900);
-  padding: 10px;
-  font-size: 14px;
-  @media (max-width: 576px) {
-    max-width: 100%;
-    width: 100%;
   }
 }
